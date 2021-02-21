@@ -1,0 +1,468 @@
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .titulo {
+        color: #2b044d;
+        animation-duration: 1s;
+        animation-name: titulo-efect;
+    }
+    
+    @keyframes titulo-efect {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+    
+    .lema {
+        animation-duration: 1s;
+        animation-name: lema-efect;
+    }
+    
+    @keyframes lema-efect {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    }
+    
+    .btn-watch {
+        background: transparent;
+        border-radius: 15px;
+        color: #2b044d;
+        font-size: 18px;
+        transform: scale(1);
+        transition: transform 0.5s;
+        animation-duration: 3s;
+        animation-name: watch-efect;
+    }
+    
+    @keyframes watch-efect {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .btn-watch:hover {
+        border: 1px solid;
+        border-color: #2b044d;
+        color: #2b044d;
+        transform: scale(1.1);
+        transition: transform 0.25s ease-out;
+    }
+    
+    .btn-about {
+        background: #d852e8;
+        color: white;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: transform 0.5s;
+        animation-duration: 3s;
+        animation-name: about-efect;
+    }
+    
+    @keyframes about-efect {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .btn-about:hover {
+        border: 1px solid;
+        transform: scale(1.1);
+        color: white;
+        transition: transform 0.25s ease-out;
+    }
+    
+    h3 {
+        color: #2b044d;
+    }
+    
+    .img1 {
+        opacity: 0;
+    }
+    
+    #img2 {
+        opacity: 0;
+    }
+    
+    .apareced {
+        animation-duration: 3s;
+        animation-name: apareced;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes apareced {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    
+    .aparecei {
+        animation-duration: 3s;
+        animation-name: aparecei;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes aparecei {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+    
+    #info1 {
+        opacity: 0;
+    }
+    
+    #info2 {
+        opacity: 0;
+    }
+    
+    #info3 {
+        opacity: 0;
+    }
+    
+    #info4 {
+        opacity: 0;
+    }
+    
+    #info5 {
+        opacity: 0;
+    }
+    
+    #info6 {
+        opacity: 0;
+    }
+    
+    .aparece {
+        animation-duration: 2s;
+        animation-name: aparece;
+        animation-fill-mode: forwards;
+    }
+    
+    .aparece2 {
+        animation-duration: 2s;
+        animation-delay: .5s;
+        animation-name: aparece;
+        animation-fill-mode: forwards;
+    }
+    
+    .aparece3 {
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-name: aparece;
+        animation-fill-mode: forwards;
+    }
+    
+    .aparece4 {
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-name: aparece;
+        animation-fill-mode: forwards;
+    }
+    
+    .aparece5 {
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-name: aparece;
+        animation-fill-mode: forwards;
+    }
+    
+    .aparece6 {
+        animation-duration: 2s;
+        animation-delay: 2.5s;
+        animation-name: aparece;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes aparece {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .img-lema {
+        animation-duration: 3s;
+        animation-name: about-efect;
+    }
+    
+    @keyframes about-efect {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    /* video */
+    
+    .container-img {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform .4s ease-in;
+    }
+    
+    .move {
+        transform: translateX(0);
+    }
+    
+    .img-show {
+        height: 80%;
+        display: block;
+        object-fit: cover;
+        transform: scale(0);
+        transition: transform .2s .4s;
+    }
+    
+    .show {
+        transform: scale(1);
+    }
+    
+    .copy {
+        position: fixed;
+        color: white;
+        bottom: 40px;
+    }
+    
+    .bx.bx-x {
+        position: absolute;
+        color: white;
+        top: 20px;
+        right: 10px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    /* icono del video */
+    
+    .icono-video:hover+.circulo {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+    
+    .circulo:hover {
+        opacity: 1;
+        transform: scale(.9);
+        transition: scale 1s;
+    }
+    
+    .circulo {
+        position: absolute;
+        color: #2b044d;
+        border: solid 1px white;
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        right: 10px;
+        margin: 1em 3em;
+        font-size: 40px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        opacity: 0;
+        background: #2b044d;
+        transition: opacity 0.5s;
+    }
+    
+    .triangulo {
+        margin: .7em .8em;
+        border-left: 25px solid white;
+        border-top: 12.5px solid transparent;
+        border-bottom: 12.5px solid transparent;
+    }
+    
+    .dot-circle {
+        color: #2b044d;
+    }
+    
+    .dot-circle:before {
+        background: #009eff;
+        opacity: .2;
+        transition: all .25s ease-out;
+        border-radius: 50%;
+        transform: rotate(0);
+        content: "";
+        height: 80px;
+        position: absolute;
+        top: -30px;
+        width: 80px;
+    }
+    
+    .dot-circle:hover:before {
+        transform: translateX(100%) rotate(45deg);
+        border-radius: 0px;
+        transition: all .25s ease-out;
+    }
+    
+    .tam {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        color: #009eff;
+    }
+    
+    .tam::before {
+        border: solid 1px;
+        border-radius: 50%;
+        border-width: 10px;
+    }
+    
+    .tam:hover::before {
+        border-radius: 0%;
+    }
+    
+    .tam:hover {
+        animation-duration: 1s;
+        animation-name: rotar;
+    }
+    
+    @keyframes rotar {
+        0% {
+            transform: rotate(0deg);
+            color: #009eff;
+        }
+        50% {
+            transform: rotate(180deg);
+            color: #d852e8;
+        }
+        100% {
+            transform: rotate(360deg);
+            color: #009eff;
+        }
+    }
+    
+    input,
+    textarea {
+        border-radius: 4px 3px 6px / 2px 4px;
+        display: block;
+        width: 100%;
+        padding: 6px;
+        margin: 12px 4%;
+        box-sizing: border-box;
+        background: white;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-color: #009eff;
+        outline: none !important;
+        transition: background 0.3s;
+        color: black;
+    }
+    
+    #formulario::before {
+        background: #009eff;
+        opacity: .2;
+        transition: all .25s ease-out;
+        border-radius: 50%;
+        transform: rotate(0);
+        content: "";
+        height: 80px;
+        position: absolute;
+        bottom: -30px;
+        right: -30px;
+        width: 80px;
+    }
+    
+    #formulario::after {
+        background: #009eff;
+        opacity: .2;
+        transition: all .25s ease-out;
+        border-radius: 50%;
+        transform: rotate(0);
+        content: "";
+        height: 80px;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        width: 80px;
+    }
+    
+    .btn-envio {
+        background: #d852e8;
+        color: white;
+        width: 50%;
+        border-radius: 15px;
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+    
+    .btn-envio:hover {
+        border: 1px solid;
+        transform: scale(1.1);
+        color: white;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .bxs-envelope {
+        color: #009eff;
+        font-size: 30px;
+    }
+    
+    .bxl-messenger {
+        color: #009eff;
+        font-size: 30px;
+    }
+    
+    @media (min-width: 940px) {
+        .circulo {
+            margin: 2em 4.5em;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .circulo {
+            margin: 2em 5.5em;
+        }
+        .home-separar {
+            margin: 150px auto;
+        }
+        #features {
+            margin: 150px auto;
+        }
+    }
